@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
     <div class="container">
         <section class="left-panel">
-            <img src="" alt="">
             <div class="logo">
                 <img src="./images/odin-logo.png" alt="">
                 <p class="brand">ODIN</p>
@@ -29,7 +29,7 @@
                 <h2>You know you want to.</h2>
             </header>
 
-            <form action="/" method="get">
+            <form id="form" action="/" method="get">
                 <div class="form-container">
                     <h2>Let's do this!</h2>
                     <ul>
@@ -54,10 +54,11 @@
                         <li>
                             <label for=" password1">PASSWORD</label>
                             <input id="password1" type="password" name="password1" required>
+                            <p id="p-error"></p>
                         </li>
                         <li>
                             <label for="password2">CONFIRM PASSWORD</label>
-                            <input id="password2" type="password" name="password2 required">
+                            <input id="password2" type="password" name="password2" required">
                         </li>
 
                     </ul>
